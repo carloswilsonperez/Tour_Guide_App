@@ -1,0 +1,16 @@
+<resources>
+    <!-- Title for the application. [CHAR LIMIT=12] -->
+    <string name="app_name">Musical Structure App</string>
+
+    <!-- Category name for the rock genre [CHAR LIMIT=20] -->
+    <string name="category_rock">Rock</string>
+
+    <!-- Category name for the instrumental genre [CHAR LIMIT=20] -->
+    <string name="category_instrumental">Instrumental</string>
+
+    <!-- Category name for the classical genre [CHAR LIMIT=20] -->
+    <string name="category_classical">Classical</string>
+
+    <!-- Category name for the pop genre [CHAR LIMIT=20] -->
+    <string name="category_pop">Pop Music</string>
+</resources>
