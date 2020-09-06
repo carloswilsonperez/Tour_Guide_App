@@ -70,20 +70,20 @@ public class FoodFragment extends Fragment {
 
         String title = "Pozole";
         String description = "Made with pork and hominy (dried corn), pozole is a traditional Mexican soup that is available at food stands, markets, and restaurants throughout Guadalajara. This dish is served at celebratory events such as Mexico's Independence Day, Quinceañeras, weddings, birthdays, and baptisms.";
-        tourItems.add(new TourItem(title, description, R.drawable.rock));
+        tourItems.add(new TourItem(title, description, R.drawable.pozole));
 
         title = "Enchiladas Tapatias";
         description = "The Spanish adjective tapatío means coming from the city or region of Guadalajara, and these simple enchiladas originate from Guadalajara.";
-        tourItems.add(new TourItem(title, description, R.drawable.rock));
+        tourItems.add(new TourItem(title, description, R.drawable.enchiladas_tapatias));
 
         title = "Chilaquiles";
         description = "Chilaquiles are a breakfast staple in Guadalajara. This hearty dish is typically served three different ways, either verde (green salsa), rojo (red salsa) or divorciados (a combination of red and green salsa).";
-        tourItems.add(new TourItem(title, description, R.drawable.rock));
+        tourItems.add(new TourItem(title, description, R.drawable.chilaquiles));
 
 
         title = "Guacamole";
         description = "A popular dip in America, Guacamole was first created by the Aztecs in what is now Mexico.";
-        tourItems.add(new TourItem(title, description, R.drawable.rock));
+        tourItems.add(new TourItem(title, description, R.drawable.guacamlole));
 
         // Create an {@link TourItemAdapter}, whose data source is a list of {@link TourItem}s. The
         // adapter knows how to create list items for each item in the list.

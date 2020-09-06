@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.android.musical_structure_app.ClassicalActivity"
+            android:name="com.example.android.musical_structure_app.FestivitiesActivity"
             android:label="@string/category_classical"
             android:parentActivityName="com.example.android.musical_structure_app.MainActivity">
 
@@ -26,7 +26,7 @@
                 android:value="com.example.android.musical_structure_app.MainActivity"/>
         </activity>
         <activity
-            android:name="com.example.android.musical_structure_app.InstrumentalActivity"
+            android:name="com.example.android.musical_structure_app.SportsActivity"
             android:label="@string/category_instrumental"
             android:parentActivityName="com.example.android.musical_structure_app.MainActivity">
 
@@ -37,7 +37,7 @@
         </activity>
 
         <activity
-            android:name="com.example.android.musical_structure_app.RockActivity"
+            android:name="com.example.android.musical_structure_app.FoodActivity"
             android:label="@string/category_rock"
             android:parentActivityName="com.example.android.musical_structure_app.MainActivity">
 
@@ -48,7 +48,7 @@
         </activity>
 
         <activity
-            android:name="com.example.android.musical_structure_app.PopActivity"
+            android:name="com.example.android.musical_structure_app.PlacesActivity"
             android:label="@string/category_pop"
             android:parentActivityName="com.example.android.musical_structure_app.MainActivity">
 

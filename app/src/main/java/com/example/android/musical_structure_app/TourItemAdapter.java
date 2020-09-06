@@ -65,10 +65,6 @@ public class TourItemAdapter extends ArrayAdapter<TourItem>  {
             // If an image is available, display the provided image based on the resource ID
             songImage.setImageResource(currentTourItem.getImageResourceId());
 
-            // Color the png icons for better visual contrast
-            int color = Color.parseColor("#FFFFFF"); //The color u want
-            songImage.setColorFilter(color);
-
             // Make sure the view is visible
             songImage.setVisibility(View.VISIBLE);
         } else {
