@@ -1,6 +1,5 @@
 package com.example.android.musical_structure_app;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -65,39 +64,48 @@ public class SportsFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         // Inflate the layout for this fragment
-        View rootView = inflater.inflate(R.layout.music_list, container, false);
+        View rootView = inflater.inflate(R.layout.tours_list, container, false);
 
-        // Create a list of songs
-        final ArrayList<Song> songs = new ArrayList<Song>();
-        songs.add(new Song("The Mission", "Ennio Morricone", R.drawable.instrumental));
-        songs.add(new Song("Forrest Gump", "Alan Silvestri", R.drawable.instrumental));
-        songs.add(new Song("Amelie", "Yan Tiersen", R.drawable.instrumental));
-        songs.add(new Song("Bossanova", "Pixies", R.drawable.instrumental));
-        songs.add(new Song("Nothing Else Matters", "Apocalyptica", R.drawable.instrumental));
-        songs.add(new Song("Illinois", "Sufjan Stevens", R.drawable.instrumental));
-        songs.add(new Song("Moonlight Sonata", "Walter Gieseking", R.drawable.instrumental));
-        songs.add(new Song("On The Nature Of Daylight", "Max Richter", R.drawable.instrumental));
-        songs.add(new Song("Interstellar ", "Hans Zimmer", R.drawable.instrumental));
-        songs.add(new Song("Sandstorm", "Darude", R.drawable.instrumental));
+        // Create a list of tourItems
+        final ArrayList<TourItem> tourItems = new ArrayList<TourItem>();
 
-        // Create an {@link SongAdapter}, whose data source is a list of {@link Song}s. The
+        String title;
+        String description;
+        String eventDate;
+
+        title = "Charreada";
+        description = "The sport of charreada is considered a \"living history\" of Mexico and is the national sport. This competitive sport is similar to rodeo and its origins date back to the 19th Century when Mexico's haciendas were widespread throughout the country.";
+        eventDate = "All Year";
+        tourItems.add(new TourItem(title, description, R.drawable.classical));
+
+        title = "Soccer";
+        description = "Club Deportivo, commonly known as Chivas, is a professional soccer club based in Guadalajara. The team was founded by Edgar Everaert, who arrived in Mexico in 1906. In 1908, with the approval of Everaert and the players, the team was renamed as Club Deportivo Guadalajara to reflect a sense of loyalty within Guadalajara's locals. In that same year, the team declared it would only field Mexican-born players.";
+        eventDate = "All Year";
+        tourItems.add(new TourItem(title, description, R.drawable.classical));
+
+        title = "Wrestling";
+        description = "Lucha Libre is a form of professional wrestling developed in Mexico. This lively sport has become an internationally recognized symbol of Mexican pop culture. The history of Mexican wrestlinig dates back to 1863 when Enrique Ugartechea, the first Mexican wrestler, developed the Mexican lucha libre style inspired by Greco-Roman wrestling. Today, lucha libre wrestlers are known as luchadores.";
+        eventDate = "All Year";
+        tourItems.add(new TourItem(title, description, R.drawable.classical));
+
+        // Create an {@link TourItemAdapter}, whose data source is a list of {@link TourItem}s. The
         // adapter knows how to create list items for each item in the list.
-        SongAdapter adapter = new SongAdapter(getActivity(), songs, R.color.category_instrumental);
+        TourItemAdapter adapter = new TourItemAdapter(getActivity(), tourItems, R.color.category_instrumental);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
-        // music_list.xml layout file.
+        // tours_list.xml layout file.
         ListView listView = rootView.findViewById(R.id.list);
 
-        // Make the {@link ListView} use the {@link SongAdapter} we created above, so that the
-        // {@link ListView} will display list items for each {@link Song} in the list.
+        // Make the {@link ListView} use the {@link TourItemAdapter} we created above, so that the
+        // {@link ListView} will display list items for each {@link TourItem} in the list.
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                // Get the {@link Song} object at the given position the user clicked on
-                Song songSelected = songs.get(position);
+                // Get the {@link TourItem} object at the given position the user clicked on
+                TourItem tourItemSelected = tourItems.get(position);
 
             }
         });

@@ -16,7 +16,7 @@ public class Genre {
     private static final int NO_IMAGE_PROVIDED = -1;
 
     /**
-     * Create a new Song object.
+     * Create a new TourItem object.
      *
      * @param genre is genre
      * @param imageId is the id of the category image

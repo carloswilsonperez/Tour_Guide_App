@@ -1,6 +1,5 @@
 package com.example.android.musical_structure_app;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -64,37 +63,46 @@ public class FoodFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView = inflater.inflate(R.layout.music_list, container, false);
+        View rootView = inflater.inflate(R.layout.tours_list, container, false);
 
-        // Create a list of songs
-        final ArrayList<Song> songs = new ArrayList<Song>();
-        songs.add(new Song("Sweet Emotion", "Aerosmith", R.drawable.rock));
-        songs.add(new Song("Kashmir", "Led Zeppelin", R.drawable.rock));
-        songs.add(new Song("Gimme Shelter", "Rolling Stones", R.drawable.rock));
-        songs.add(new Song("Back in Black", "AC/DC", R.drawable.rock));
-        songs.add(new Song("A Day In The Life", "The Beatles", R.drawable.rock));
-        songs.add(new Song("All Along The Watch Tower", "Jimy Hendrix", R.drawable.rock));
-        songs.add(new Song("Bohemian Rapsody", "Queen", R.drawable.rock));
-        songs.add(new Song("Everybody Wants Some!!", "Van Halen", R.drawable.rock));
+        // Create a list of tourItems
+        final ArrayList<TourItem> tourItems = new ArrayList<TourItem>();
 
-        // Create an {@link SongAdapter}, whose data source is a list of {@link Song}s. The
+        String title = "Pozole";
+        String description = "Made with pork and hominy (dried corn), pozole is a traditional Mexican soup that is available at food stands, markets, and restaurants throughout Guadalajara. This dish is served at celebratory events such as Mexico's Independence Day, Quinceañeras, weddings, birthdays, and baptisms.";
+        tourItems.add(new TourItem(title, description, R.drawable.rock));
+
+        title = "Enchiladas Tapatias";
+        description = "The Spanish adjective tapatío means coming from the city or region of Guadalajara, and these simple enchiladas originate from Guadalajara.";
+        tourItems.add(new TourItem(title, description, R.drawable.rock));
+
+        title = "Chilaquiles";
+        description = "Chilaquiles are a breakfast staple in Guadalajara. This hearty dish is typically served three different ways, either verde (green salsa), rojo (red salsa) or divorciados (a combination of red and green salsa).";
+        tourItems.add(new TourItem(title, description, R.drawable.rock));
+
+
+        title = "Guacamole";
+        description = "A popular dip in America, Guacamole was first created by the Aztecs in what is now Mexico.";
+        tourItems.add(new TourItem(title, description, R.drawable.rock));
+
+        // Create an {@link TourItemAdapter}, whose data source is a list of {@link TourItem}s. The
         // adapter knows how to create list items for each item in the list.
-        SongAdapter adapter = new SongAdapter(getActivity(), songs, R.color.category_rock);
+        TourItemAdapter adapter = new TourItemAdapter(getActivity(), tourItems, R.color.category_rock);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
-        // music_list.xml layout file.
+        // tours_list.xml layout file.
         ListView listView = rootView.findViewById(R.id.list);
 
-        // Make the {@link ListView} use the {@link SongAdapter} we created above, so that the
-        // {@link ListView} will display list items for each {@link Song} in the list.
+        // Make the {@link ListView} use the {@link TourItemAdapter} we created above, so that the
+        // {@link ListView} will display list items for each {@link TourItem} in the list.
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                // Get the {@link Song} object at the given position the user clicked on
-                Song songSelected = songs.get(position);
+                // Get the {@link TourItem} object at the given position the user clicked on
+                TourItem tourItemSelected = tourItems.get(position);
             }
         });
 

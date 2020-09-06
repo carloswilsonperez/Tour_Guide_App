@@ -15,7 +15,7 @@ public class InstrumentalActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // setContentView(R.layout.music_list);
+        // setContentView(R.layout.tours_list);
 
         setContentView(R.layout.activity_category);
         getSupportFragmentManager().beginTransaction()

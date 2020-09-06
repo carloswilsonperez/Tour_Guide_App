@@ -3,7 +3,7 @@ package com.example.android.musical_structure_app;
 
 import android.content.Context;
 import android.graphics.Color;
-import androidx.appcompat.app.AppCompatActivity;
+
 import androidx.core.content.ContextCompat;
 
 import android.view.LayoutInflater;
@@ -16,24 +16,24 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 /**
- * {@link SongAdapter} is an {@link ArrayAdapter} that can provide the layout for each list item
- * based on a data source, which is a list of {@link Song} objects.
+ * {@link TourItemAdapter} is an {@link ArrayAdapter} that can provide the layout for each list item
+ * based on a data source, which is a list of {@link TourItem} objects.
  */
-public class SongAdapter extends ArrayAdapter<Song>  {
+public class TourItemAdapter extends ArrayAdapter<TourItem>  {
 
     /** Resource ID for the background color for this list of songs */
     private int mColorResourceId;
     private Context mContext;
 
     /**
-     * Create a new {@link SongAdapter} object.
+     * Create a new {@link TourItemAdapter} object.
      *
      * @param context is the current context (i.e. Activity) that the adapter is being created in.
-     * @param songs is the list of {@link Song}s to be displayed.
-     * @param colorResourceId is the resource ID for the background color for this list of songs
+     * @param tourItems is the list of {@link TourItem}s to be displayed.
+     * @param colorResourceId is the resource ID for the background color for this list of tourItems
      */
-    public SongAdapter(Context context, ArrayList<Song> songs, int colorResourceId) {
-        super(context, 0, songs);
+    public TourItemAdapter(Context context, ArrayList<TourItem> tourItems, int colorResourceId) {
+        super(context, 0, tourItems);
         mColorResourceId = colorResourceId;
         mContext = context;
     }
@@ -44,26 +44,26 @@ public class SongAdapter extends ArrayAdapter<Song>  {
         View listItemView = convertView;
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.song_item_layout, parent, false);
+                    R.layout.tour_item_layout, parent, false);
         }
 
-        // Get the {@link Song} object located at this position in the list
-        Song currentSong = getItem(position);
+        // Get the {@link TourItem} object located at this position in the list
+        TourItem currentTourItem = getItem(position);
 
-        // Find the TextView in the song_item_layout.xml layout with the ID song_title.
+        // Find the TextView in the tour_item_layout.xml layout with the ID song_title.
         TextView songTitle = listItemView.findViewById(R.id.song_title);
-        songTitle.setText(currentSong.getTitle());
+        songTitle.setText(currentTourItem.getTitle());
 
-        // Find the TextView in the song_item_layout.xml layout with the ID song_artist.
+        // Find the TextView in the tour_item_layout.xml layout with the ID song_artist.
         TextView songArtist = listItemView.findViewById(R.id.song_artist);
-        songArtist.setText(currentSong.getArtist());
+        songArtist.setText(currentTourItem.getDescription());
 
-        // Find the ImageView in the song_item_layout.xml layout with the ID song_image.
+        // Find the ImageView in the tour_item_layout.xml layout with the ID song_image.
         ImageView songImage = listItemView.findViewById(R.id.song_image);
         // Check if an image is provided for this song or not
-        if (currentSong.hasImage()) {
+        if (currentTourItem.hasImage()) {
             // If an image is available, display the provided image based on the resource ID
-            songImage.setImageResource(currentSong.getImageResourceId());
+            songImage.setImageResource(currentTourItem.getImageResourceId());
 
             // Color the png icons for better visual contrast
             int color = Color.parseColor("#FFFFFF"); //The color u want

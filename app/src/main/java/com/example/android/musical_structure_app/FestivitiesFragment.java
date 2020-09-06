@@ -63,40 +63,67 @@ public class FestivitiesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView = inflater.inflate(R.layout.music_list, container, false);
+        View rootView = inflater.inflate(R.layout.tours_list, container, false);
 
-        // Create a list of songs
-        final ArrayList<Song> songs = new ArrayList<Song>();
-        songs.add(new Song("Eine Kleine Nachtmusik", "Mozart", R.drawable.classical));
-        songs.add(new Song("Fur Elise", "Beethoven", R.drawable.classical));
-        songs.add(new Song("O Mio Babbino Caro", "Gianni Schicchi", R.drawable.classical));
-        songs.add(new Song("Toccata And Fugue In D Minor", "J. S. Bach", R.drawable.classical));
-        songs.add(new Song("Symphone No. 5 In C Minor", "Beethoven", R.drawable.classical));
-        songs.add(new Song("The Four Seasons", "Vivaldi", R.drawable.classical));
-        songs.add(new Song("Carmen", "Bizet", R.drawable.classical));
-        songs.add(new Song("The Blue Danube", "Johan Strauss II", R.drawable.classical));
-        songs.add(new Song("Bolero", "Ravel", R.drawable.classical));
-        songs.add(new Song("Overture From The Mariage Of Figaro", "Mozart", R.drawable.classical));
+        // Create a list of tourItems
+        final ArrayList<TourItem> tourItems = new ArrayList<TourItem>();
+        String title;
+        String description;
+        String eventDate;
 
+        title = "COME Festival";
+        description = "COME Festival Internacional comes to Guadalajara every year to give a touch of unique flavor to local cuisine and introduce new dishes that will conquer even the most expert palate. With cooking demos, round tables, Guadalajara sets the table and flavors to enjoy a gastronomic feast.";
+        eventDate = "March";
+        tourItems.add(new TourItem(title, description, R.drawable.classical));
 
-        // Create an {@link SongAdapter}, whose data source is a list of {@link Song}s. The
+        title = "Guadalajara International Film Festival";
+        description = "With a diverse program, the International Film Festival in Guadalajara highlights the imagination of great artists and filmmakers. The FICG is a cultural event of great importance for Guadalajara and showcases the appreciation, dissemination, promotion and distribution of Mexican and Latin American cinema. It is a festival fit for in which film is presented as an industry, entertainment and art.";
+        eventDate = "March";
+        tourItems.add(new TourItem(title, description, R.drawable.classical));
+
+        title = "Tequila Festival";
+        description = "More than 200 brands of tequila, music, art exhibits, food and tequila tastings await you during this two -day festival. Tequila Festival will delight your senses with the Mexican elixir that has transcended borders and makes Guadalajara proud of our history and tradition.";
+        eventDate = "March";
+        tourItems.add(new TourItem(title, description, R.drawable.classical));
+
+        title = "Jalisco Jazz Festival";
+        description = "The Jalisco Jazz Festival is a summer festival in Guadalajara that attracts the most influential artists of the international jazz scene. For several years now, the Jalisco Jazz Festival hosts hundreds of attendees with brilliant artistic shows that highlights the best music of the jazz scene.";
+        eventDate = "July";
+        tourItems.add(new TourItem(title, description, R.drawable.classical));
+
+        title = "International Mariachi and Charrería Festival";
+        description = "Named an \"Intangible Heritage of Humanity\" by UNESCO, the International Mariachi and Charrería Festival has become an experience full of tradition. Every year, since 1994, thousands of spectators attend the festival to enjoy performances by some of the best mariachis in the world, the National Charro Championship, and other culture related events.This festival has turned into a spectacular party filled with Mexican folklore.";
+        eventDate = "September";
+        tourItems.add(new TourItem(title, description, R.drawable.classical));
+
+        title = "Fiestas de Octubre";
+        description = "With a broad range of great artists, the Fiestas de Octubre brings together nearly two million visitors per year. This month-long Guadalajara celebration started in 1965 and features Guadalajara’s best art, culture, entertainment, and cuisine.";
+        eventDate = "October";
+        tourItems.add(new TourItem(title, description, R.drawable.classical));
+
+        title = "Guadalajara International Book Fair";
+        description = "Since 1987, the Guadalajara International Book Fair has been responsible for turning our city into a intellectual epicenter. The festival’s program involves international authors from all continents and different languages. Open to the general public, the festival includes live music, art, film, theater and literature.";
+        eventDate = "November";
+        tourItems.add(new TourItem(title, description, R.drawable.classical));
+
+        // Create an {@link TourItemAdapter}, whose data source is a list of {@link TourItem}s. The
         // adapter knows how to create list items for each item in the list.
-        SongAdapter adapter = new SongAdapter(getActivity(), songs, R.color.category_rock);
+        TourItemAdapter adapter = new TourItemAdapter(getActivity(), tourItems, R.color.category_rock);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
-        // music_list.xml layout file.
+        // tours_list.xml layout file.
         ListView listView = rootView.findViewById(R.id.list);
 
-        // Make the {@link ListView} use the {@link SongAdapter} we created above, so that the
-        // {@link ListView} will display list items for each {@link Song} in the list.
+        // Make the {@link ListView} use the {@link TourItemAdapter} we created above, so that the
+        // {@link ListView} will display list items for each {@link TourItem} in the list.
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                // Get the {@link Song} object at the given position the user clicked on
-                Song songSelected = songs.get(position);
+                // Get the {@link TourItem} object at the given position the user clicked on
+                TourItem tourItemSelected = tourItems.get(position);
             }
         });
 

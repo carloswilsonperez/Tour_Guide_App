@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Primary color of the app -->
-    <color name="primary_color">#7e57c2</color>
+    <color name="primary_color">#ffb300</color>
 
     <!-- Primary dark color of the app -->
-    <color name="primary_dark_color">#4d2c91</color>
+    <color name="primary_dark_color">#ff6f00</color>
 
     <!-- Background color for the rock category -->
-    <color name="category_rock">#b085f5</color>
+    <color name="category_rock">#fff8e1</color>
 
     <!-- Background color instrumental category -->
-    <color name="category_instrumental">#b085f5</color>
+    <color name="category_instrumental">#fff8e1</color>
 
     <!-- Background color for the classical category -->
-    <color name="category_classical">#b085f5</color>
+    <color name="category_classical">#fff8e1</color>
 
     <!-- Background color for the pop category -->
-    <color name="category_pop">#b085f5</color>
+    <color name="category_pop">#fff8e1</color>
 
     <!-- Background color for the music icon -->
     <color name="music_icon_background">#b085f5</color>
@@ -25,5 +25,5 @@
     <color name="white_background">#FFFFFF</color>
 
     <!-- Text color -->
-    <color name="text_color">#FFFFFF</color>
+    <color name="text_color">#000000</color>
 </resources>

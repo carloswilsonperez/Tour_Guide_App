@@ -1,7 +1,7 @@
 # Musical Structure App
 ===================================
 
-This app consists of a list of genres and associates songs. 
+This app consists of a list of genres and associates tourItems. 
 
 This app does not play music, it is just the visual part.
 

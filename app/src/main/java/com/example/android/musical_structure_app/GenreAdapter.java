@@ -3,7 +3,7 @@ package com.example.android.musical_structure_app;
 
 import android.content.Context;
 import android.graphics.Color;
-import androidx.appcompat.app.AppCompatActivity;
+
 import androidx.core.content.ContextCompat;
 
 import android.view.LayoutInflater;
@@ -28,7 +28,7 @@ public class GenreAdapter extends ArrayAdapter<Genre>  {
      * Create a new {@link GenreAdapter} object.
      *
      * @param context is the current context (i.e. Activity) that the adapter is being created in.
-     * @param categories is the list of {@link Song}s to be displayed.
+     * @param categories is the list of {@link TourItem}s to be displayed.
      * @param colorResourceId is the resource ID for the background color for this list of music
      */
     public GenreAdapter(Context context, ArrayList<Genre> categories, int colorResourceId) {
@@ -45,14 +45,14 @@ public class GenreAdapter extends ArrayAdapter<Genre>  {
                     R.layout.category_item_layout, parent, false);
         }
 
-        // Get the {@link Song} object located at this position in the list
+        // Get the {@link TourItem} object located at this position in the list
         Genre currentCategory = getItem(position);
 
-        // Find the TextView in the song_item_layout.xml layout with the ID category_name.
+        // Find the TextView in the tour_item_layout.xml layout with the ID category_name.
         TextView categoryName = listItemView.findViewById(R.id.category_name);
         categoryName.setText(currentCategory.getGenre());
 
-        // Find the ImageView in the song_item_layout.xml layout with the ID category_image.
+        // Find the ImageView in the tour_item_layout.xml layout with the ID category_image.
         ImageView categoryImage = listItemView.findViewById(R.id.category_image);
 
         // Check if an image is provided for this song or not
