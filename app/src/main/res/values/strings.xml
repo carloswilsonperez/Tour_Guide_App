@@ -13,4 +13,202 @@
 
     <!-- Category name for the pop genre [CHAR LIMIT=20] -->
     <string name="category_pop">Places</string>
+
+    <string-array name="places_titles">
+        <item>Catedral de Guadalajara</item>
+        <item>Hospicio Cabañas</item>
+        <item>Basilica de Zapopan</item>
+        <item>Andares</item>
+        <item>Museo De Las Artes</item>
+    </string-array>
+    <string-array name="places_description">
+        <item>Guadalajara\'s cathedral is the city\'s most beloved and conspicuous landmark with distinctive neo-Gothic towers built after an earthquake toppled the originals in the mid-19th century. Begun in 1588 and consecrated in 1618, the building is almost as old as the city itself. Time your visit right and you will see light filter through the stained-glass renderings of The Last Supper and hear a working pipe organ rumble sweetly from the rafters.</item>
+        <item>The Hospicos Cabañas was built at the beginning of the 19th centurey to provide care and shelter for the disadvantaged – orphans, seniors, the handicapped and chronic invalids. This large complex which incorporates several unusual features designed specifically to meet the needs of its occupants, was unique for its time.</item>
+        <item>Zapopan\'s pride and joy, the Basilica de Zapopan, built in 1730, is home to Nuestra Senora de Zapopan, a petite statue of the Virgin visited by pilgrims year-round. During the Fiestas de Octubre, thousands of kneeling faithful from the Jalisco region crawl behind the statue as it is carried from the basilica to Guadalajara\'s central cathedral.</item>
+        <item>Andaras is a shopping mall located in the Zapopan district of Guadalajara. This outdoor and indoor shopping center opened on November 19, 2008 and has been drawing local and visiting shoppers ever since. All the well recognized international luxury and commercial brands as well as independent retailers are housed there.</item>
+        <item>To scratch your modernist itch if you\'ve overdosed on classic art, head three blocks west of Parque Revolucion to this museum housed in a French renaissance building that formaearly served as the admin buildings for the University of Guadalajara.</item>
+    </string-array>
+    <string-array name="places_dates">
+        <item>All Year.</item>
+        <item>All Year.</item>
+        <item>All Year.</item>
+        <item>All Year.</item>
+        <item>All Year.</item>
+    </string-array>
+    <string-array name="places_address">
+        <item>Alcalde Ave. #10 (between Hildalgo Ave. and Morelos) Guadalajara, 44100.</item>
+        <item>Cabanas No. 8 Col. Las Fresas, Plaza tapatia C.P. 44369.</item>
+        <item>Evan Briseno #152, Guadalajara.</item>
+        <item>Blvd. Puerto de Hierro #4965, Guadalajara, 45116.</item>
+        <item>Av Jauarez #975, Guadalajara.</item>
+    </string-array>
+    <string-array name="places_phones">
+        <item>+(33) 3613 7168.</item>
+        <item>(33) 3818 2800 ext. 31642.</item>
+        <item>+52 (33) 3633 6614.</item>
+        <item>+(33) 3648 2280.</item>
+        <item>+(33) 3134 1664.</item>
+    </string-array>
+    <string-array name="places_office_hours">
+        <item>08:00AM - 08:00PM.</item>
+        <item>10:00AM - 06:00PM.</item>
+        <item>09:00AM - 08:00PM.</item>
+        <item>11:00AM - 10:00PM.</item>
+        <item>Tuesday to Sunday from 10:00AM - 6:00PM.</item>
+    </string-array>
+    <integer-array name="places_images">
+        <item>@drawable/catedral_guadalajara</item>
+        <item>@drawable/hospicio_cabanas</item>
+        <item>@drawable/catedral_zapopan</item>
+        <item>@drawable/andares</item>
+        <item>@drawable/museo_artes</item>
+    </integer-array>
+
+
+    <string-array name="cuisine_titles">
+        <item>Pozole</item>
+        <item>Enchiladas Tapatìas</item>
+        <item>Chilaquiles</item>
+        <item>Guacamole</item>
+    </string-array>
+    <string-array name="cuisine_description">
+        <item>Made with pork and hominy (dried corn), pozole is a traditional Mexican soup that is available at food stands, markets, and restaurants throughout Guadalajara. This dish is served at celebratory events such as Mexico\'s Independence Day, Quinceañeras, weddings, birthdays, and baptisms.</item>
+        <item>The Spanish adjective tapatio means coming from the city or region of Guadalajara, and these simple enchiladas originate from Guadalajara.</item>
+        <item>Chilaquiles are a breakfast staple in Guadalajara. This hearty dish is typically served three different ways, either verde (green salsa), rojo (red salsa) or divorciados (a combination of red and green salsa).</item>
+        <item>A popular dip in America, Guacamole was first created by the Aztecs in what is now Mexico.</item>
+    </string-array>
+    <string-array name="cuisine_dates">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <string-array name="cuisine_address">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <string-array name="cuisine_phones">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <string-array name="cuisine_office_hours">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <integer-array name="cuisine_images">
+        <item>@drawable/pozole</item>
+        <item>@drawable/enchiladas_tapatias</item>
+        <item>@drawable/chilaquiles</item>
+        <item>@drawable/guacamlole</item>
+    </integer-array>
+
+
+
+    <string-array name="sports_titles">
+        <item>Charreada</item>
+        <item>Soccer</item>
+        <item>Wrestling</item>
+    </string-array>
+    <string-array name="sports_description">
+        <item>The sport of charreada is considered a \"living history\" of Mexico and is the national sport. This competitive sport is similar to rodeo and its origins date back to the 19th Century when Mexico\'s haciendas were widespread throughout the country.</item>
+        <item>Club Deportivo, commonly known as Chivas, is a professional soccer club based in Guadalajara. The team was founded by Edgar Everaert, who arrived in Mexico in 1906. In 1908, with the approval of Everaert and the players, the team was renamed as Club Deportivo Guadalajara to reflect a sense of loyalty within Guadalajara\'s locals. In that same year, the team declared it would only field Mexican-born players.</item>
+        <item>Lucha Libre is a form of professional wrestling developed in Mexico. This lively sport has become an internationally recognized symbol of Mexican pop culture. The history of Mexican wrestlinig dates back to 1863 when Enrique Ugartechea, the first Mexican wrestler, developed the Mexican lucha libre style inspired by Greco-Roman wrestling. Today, lucha libre wrestlers are known as luchadores.</item>
+    </string-array>
+    <string-array name="sports_dates">
+        <item>All Year.</item>
+        <item>All Year.</item>
+        <item>All Year.</item>
+    </string-array>
+    <string-array name="sports_address">
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <string-array name="sports_phones">
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <string-array name="sports_office_hours">
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <integer-array name="sports_images">
+        <item>@drawable/charreria</item>
+        <item>@drawable/soccer</item>
+        <item>@drawable/wrestling</item>
+    </integer-array>
+
+
+
+    <string-array name="festivities_titles">
+        <item>COME Festival</item>
+        <item>Guadalajara International Film Festival</item>
+        <item>Tequila Festival</item>
+        <item>Jalisco Jazz Festival</item>
+        <item>International Mariachi and Charrería Festival</item>
+        <item>Fiestas de Octubre</item>
+        <item>Guadalajara International Book Fair</item>
+    </string-array>
+    <string-array name="festivities_description">
+        <item>COME Festival Internacional comes to Guadalajara every year to give a touch of unique flavor to local cuisine and introduce new dishes that will conquer even the most expert palate. With cooking demos, round tables, Guadalajara sets the table and flavors to enjoy a gastronomic feast.</item>
+        <item>With a diverse program, the International Film Festival in Guadalajara highlights the imagination of great artists and filmmakers. The FICG is a cultural event of great importance for Guadalajara and showcases the appreciation, dissemination, promotion and distribution of Mexican and Latin American cinema. It is a festival fit for in which film is presented as an industry, entertainment and art.</item>
+        <item>More than 200 brands of tequila, music, art exhibits, food and tequila tastings await you during this two -day festival. Tequila Festival will delight your senses with the Mexican elixir that has transcended borders and makes Guadalajara proud of our history and tradition.</item>
+        <item>The Jalisco Jazz Festival is a summer festival in Guadalajara that attracts the most influential artists of the international jazz scene. For several years now, the Jalisco Jazz Festival hosts hundreds of attendees with brilliant artistic shows that highlights the best music of the jazz scene.</item>
+        <item>Named an \"Intangible Heritage of Humanity\" by UNESCO, the International Mariachi and Charrería Festival has become an experience full of tradition. Every year, since 1994, thousands of spectators attend the festival to enjoy performances by some of the best mariachis in the world, the National Charro Championship, and other culture related events.This festival has turned into a spectacular party filled with Mexican folklore.</item>
+        <item>With a broad range of great artists, the Fiestas de Octubre brings together nearly two million visitors per year. This month-long Guadalajara celebration started in 1965 and features Guadalajara’s best art, culture, entertainment, and cuisine.</item>
+        <item>Since 1987, the Guadalajara International Book Fair has been responsible for turning our city into a intellectual epicenter. The festival’s program involves international authors from all continents and different languages. Open to the general public, the festival includes live music, art, film, theater and literature.</item>
+    </string-array>
+    <string-array name="festivities_dates">
+        <item>March.</item>
+        <item>March.</item>
+        <item>March.</item>
+        <item>July.</item>
+        <item>September.</item>
+        <item>October.</item>
+        <item>November.</item>
+    </string-array>
+    <string-array name="festivities_address">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <string-array name="festivities_phones">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <string-array name="festiities_office_hours">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <integer-array name="festivities_images">
+        <item>@drawable/come</item>
+        <item>@drawable/festival_cine</item>
+        <item>@drawable/festival_tequila</item>
+        <item>@drawable/festival_jazz</item>
+        <item>@drawable/festival_mariachi</item>
+        <item>@drawable/fiestas_octubre</item>
+        <item>@drawable/feria_libro</item>
+    </integer-array>
 </resources>

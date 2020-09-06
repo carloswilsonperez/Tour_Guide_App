@@ -5,6 +5,7 @@ import android.content.Context;
 
 import androidx.core.content.ContextCompat;
 
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -69,28 +70,28 @@ public class TourItemAdapter extends ArrayAdapter<TourItem>  {
         tourDescription.setText(currentTourItem.getDescription());
 
         TextView when = listItemView.findViewById(R.id.tour_when);
-        if (currentTourItem.getmEventDate() != null) {
+        if (!TextUtils.isEmpty(currentTourItem.getmEventDate())) {
             when.setText("WHEN: " + currentTourItem.getmEventDate());
         } else {
             when.setVisibility(View.GONE);
         }
 
         TextView address = listItemView.findViewById(R.id.tour_item_address);
-        if (currentTourItem.getmAddress() != null) {
+        if (!TextUtils.isEmpty(currentTourItem.getmAddress())) {
             address.setText("ADDRESS: " + currentTourItem.getmAddress());
         } else {
             address.setVisibility(View.GONE);
         }
 
         TextView phone = listItemView.findViewById(R.id.tour_item_phone);
-        if (currentTourItem.getmPhone() != null) {
+        if (!TextUtils.isEmpty(currentTourItem.getmPhone())) {
             phone.setText("PHONE: " + currentTourItem.getmPhone());
         } else {
             phone.setVisibility(View.GONE);
         }
 
         TextView officeHours = listItemView.findViewById(R.id.tour_item_office_hours);
-        if (currentTourItem.getmOfficeHours() != null) {
+        if (!TextUtils.isEmpty(currentTourItem.getmOfficeHours())) {
             officeHours.setText(currentTourItem.getmOfficeHours());
         } else {
             officeHours.setVisibility(View.GONE);

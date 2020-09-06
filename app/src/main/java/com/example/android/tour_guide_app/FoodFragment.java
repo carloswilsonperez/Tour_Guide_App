@@ -1,5 +1,6 @@
 package com.example.android.tour_guide_app;
 
+import android.content.res.TypedArray;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -14,82 +15,42 @@ import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link FoodFragment#newInstance} factory method to
+ * Use the {@link FoodFragment} factory method to
  * create an instance of this fragment.
  */
 public class FoodFragment extends Fragment {
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
 
     public FoodFragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment FoodFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static FoodFragment newInstance(String param1, String param2) {
-        FoodFragment fragment = new FoodFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView = inflater.inflate(R.layout.tours_list, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_food, container, false);
 
         // Create a list of tourItems
         final ArrayList<TourItem> tourItems = new ArrayList<TourItem>();
 
-        String title;
-        String description;
-        String eventDate = null;
-        String address = null;
-        String phone = null;
-        String officeHours = null;
+        String[] titles = getResources().getStringArray(R.array.cuisine_titles);
+        String[] descriptions = getResources().getStringArray(R.array.cuisine_description);
+        String[] eventDates = getResources().getStringArray(R.array.cuisine_dates);
+        String[] addresses = getResources().getStringArray(R.array.cuisine_address);
+        String[] phones = getResources().getStringArray(R.array.cuisine_phones);
+        String[] officeHours = getResources().getStringArray(R.array.cuisine_office_hours);
+        TypedArray images = getResources().obtainTypedArray(R.array.cuisine_images);
 
-        title = "Pozole";
-        description = "Made with pork and hominy (dried corn), pozole is a traditional Mexican soup that is available at food stands, markets, and restaurants throughout Guadalajara. This dish is served at celebratory events such as Mexico's Independence Day, Quinceañeras, weddings, birthdays, and baptisms.";
-        tourItems.add(new TourItem(title, description, eventDate, address, phone, officeHours, R.drawable.pozole));
+        int numberOfItems = titles.length;
 
-        title = "Enchiladas Tapatias";
-        description = "The Spanish adjective tapatío means coming from the city or region of Guadalajara, and these simple enchiladas originate from Guadalajara.";
-        tourItems.add(new TourItem(title, description, eventDate, address, phone, officeHours, R.drawable.enchiladas_tapatias));
-
-        title = "Chilaquiles";
-        description = "Chilaquiles are a breakfast staple in Guadalajara. This hearty dish is typically served three different ways, either verde (green salsa), rojo (red salsa) or divorciados (a combination of red and green salsa).";
-        tourItems.add(new TourItem(title, description, eventDate, address, phone, officeHours, R.drawable.chilaquiles));
-
-        title = "Guacamole";
-        description = "A popular dip in America, Guacamole was first created by the Aztecs in what is now Mexico.";
-        tourItems.add(new TourItem(title, description, eventDate, address, phone, officeHours, R.drawable.guacamlole));
+        for(int i = 0; i < numberOfItems; i++) {
+            tourItems.add(new TourItem(titles[i], descriptions[i], eventDates[i], addresses[i], phones[i], officeHours[i], images.getResourceId(i, -1)));
+        }
 
         // Create an {@link TourItemAdapter}, whose data source is a list of {@link TourItem}s. The
         // adapter knows how to create list items for each item in the list.
@@ -98,7 +59,7 @@ public class FoodFragment extends Fragment {
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
         // tours_list.xml layout file.
-        ListView listView = rootView.findViewById(R.id.list);
+        ListView listView = rootView.findViewById(R.id.food_list);
 
         // Make the {@link ListView} use the {@link TourItemAdapter} we created above, so that the
         // {@link ListView} will display list items for each {@link TourItem} in the list.
