@@ -4,8 +4,7 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/primary_color</item>
         <item name="colorPrimaryDark">@color/primary_dark_color</item>
-        <item name="colorAccent">@color/text_color</item>
-        <item name="actionMenuTextColor">@color/text_color</item>
+        <item name="titleTextColor">@color/text_color</item>
     </style>
 
     <!-- Style for buttons in the detail activity -->
