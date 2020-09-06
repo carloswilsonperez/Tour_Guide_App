@@ -23,4 +23,8 @@
         <item name="android:padding">20dp</item>
         <item name="android:background">@color/music_icon_background</item>
     </style>
+
+    <!-- Style for a tab that displays a category name -->
+    <style name="CategoryTab">
+    </style>
 </resources>
