@@ -18,7 +18,7 @@ This is the Project #7 for the Android Basics Nano Degree at Udacity.
 
 # Screenshots
 
-![screenshot of app](screenshots/image1.png "This is a screenshot of the app")
-![screenshot of app](screenshots/image2.png "This is a screenshot of the app")
-![screenshot of app](screenshots/image3.png "This is a screenshot of the app")
-![screenshot of app](screenshots/image4.png "This is a screenshot of the app")
+![screenshot of app](screenshots/imagen1.png "This is a screenshot of the app")
+![screenshot of app](screenshots/imagen2.png "This is a screenshot of the app")
+![screenshot of app](screenshots/imagen3.png "This is a screenshot of the app")
+![screenshot of app](screenshots/imagen4.png "This is a screenshot of the app")
