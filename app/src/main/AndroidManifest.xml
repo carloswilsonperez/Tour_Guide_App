@@ -15,48 +15,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.example.android.musical_structure_app.FestivitiesActivity"
-            android:label="@string/category_classical"
-            android:parentActivityName="com.example.android.musical_structure_app.MainActivity">
 
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.android.musical_structure_app.MainActivity"/>
-        </activity>
-        <activity
-            android:name="com.example.android.musical_structure_app.SportsActivity"
-            android:label="@string/category_instrumental"
-            android:parentActivityName="com.example.android.musical_structure_app.MainActivity">
-
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.android.musical_structure_app.MainActivity"/>
-        </activity>
-
-        <activity
-            android:name="com.example.android.musical_structure_app.FoodActivity"
-            android:label="@string/category_rock"
-            android:parentActivityName="com.example.android.musical_structure_app.MainActivity">
-
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.android.musical_structure_app.MainActivity"/>
-        </activity>
-
-        <activity
-            android:name="com.example.android.musical_structure_app.PlacesActivity"
-            android:label="@string/category_pop"
-            android:parentActivityName="com.example.android.musical_structure_app.MainActivity">
-
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.android.musical_structure_app.MainActivity"/>
-        </activity>
     </application>
 
 </manifest>
