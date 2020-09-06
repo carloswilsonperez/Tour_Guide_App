@@ -1,11 +1,12 @@
-# Musical Structure App
+# Tour Guide App
 ===================================
 
-This app consists of a list of genres and associates tourItems. 
+This app consists of a list of tours and associates tour items, for the city of
+Guadalajara, Mexico.
 
-This app does not play music, it is just the visual part.
+This app uses a single activity and four Fragments.
 
-This is the Project #6 for the Android Basics Nano Degree at Udacity.
+This is the Project #7 for the Android Basics Nano Degree at Udacity.
 
 # Pre-requisites
 --------------
@@ -20,3 +21,4 @@ This is the Project #6 for the Android Basics Nano Degree at Udacity.
 ![screenshot of app](screenshots/image1.png "This is a screenshot of the app")
 ![screenshot of app](screenshots/image2.png "This is a screenshot of the app")
 ![screenshot of app](screenshots/image3.png "This is a screenshot of the app")
+![screenshot of app](screenshots/image4.png "This is a screenshot of the app")
