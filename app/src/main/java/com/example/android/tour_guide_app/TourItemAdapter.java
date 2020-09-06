@@ -1,8 +1,7 @@
 
-package com.example.android.musical_structure_app;
+package com.example.android.tour_guide_app;
 
 import android.content.Context;
-import android.graphics.Color;
 
 import androidx.core.content.ContextCompat;
 
@@ -21,7 +20,7 @@ import java.util.ArrayList;
  */
 public class TourItemAdapter extends ArrayAdapter<TourItem>  {
 
-    /** Resource ID for the background color for this list of songs */
+    /** Resource ID for the background color for this list of tours */
     private int mColorResourceId;
     private Context mContext;
 
@@ -50,34 +49,60 @@ public class TourItemAdapter extends ArrayAdapter<TourItem>  {
         // Get the {@link TourItem} object located at this position in the list
         TourItem currentTourItem = getItem(position);
 
-        // Find the TextView in the tour_item_layout.xml layout with the ID song_title.
-        TextView songTitle = listItemView.findViewById(R.id.song_title);
-        songTitle.setText(currentTourItem.getTitle());
-
-        // Find the TextView in the tour_item_layout.xml layout with the ID song_artist.
-        TextView songArtist = listItemView.findViewById(R.id.song_artist);
-        songArtist.setText(currentTourItem.getDescription());
-
-        // Find the ImageView in the tour_item_layout.xml layout with the ID song_image.
-        ImageView songImage = listItemView.findViewById(R.id.song_image);
-        // Check if an image is provided for this song or not
+        ImageView tourItemImage = listItemView.findViewById(R.id.tour_item_image);
+        // Check if an image is provided for this tour or not
         if (currentTourItem.hasImage()) {
             // If an image is available, display the provided image based on the resource ID
-            songImage.setImageResource(currentTourItem.getImageResourceId());
+            tourItemImage.setImageResource(currentTourItem.getImageResourceId());
 
             // Make sure the view is visible
-            songImage.setVisibility(View.VISIBLE);
+            tourItemImage.setVisibility(View.VISIBLE);
         } else {
             // Otherwise hide the ImageView (set visibility to GONE)
-            songImage.setVisibility(View.GONE);
+            tourItemImage.setVisibility(View.GONE);
+        }
+
+        TextView tourItemTitle = listItemView.findViewById(R.id.tour_item_title);
+        tourItemTitle.setText(currentTourItem.getTitle());
+
+        TextView tourDescription = listItemView.findViewById(R.id.tour_item_description);
+        tourDescription.setText(currentTourItem.getDescription());
+
+        TextView when = listItemView.findViewById(R.id.tour_when);
+        if (currentTourItem.getmEventDate() != null) {
+            when.setText("WHEN: " + currentTourItem.getmEventDate());
+        } else {
+            when.setVisibility(View.GONE);
+        }
+
+        TextView address = listItemView.findViewById(R.id.tour_item_address);
+        if (currentTourItem.getmAddress() != null) {
+            address.setText("ADDRESS; " + currentTourItem.getmAddress());
+        } else {
+            address.setVisibility(View.GONE);
+        }
+
+        TextView phone = listItemView.findViewById(R.id.tour_item_phone);
+        if (currentTourItem.getmPhone() != null) {
+            phone.setText("PHONE: " + currentTourItem.getmPhone());
+        } else {
+            phone.setVisibility(View.GONE);
+        }
+
+        TextView officeHours = listItemView.findViewById(R.id.tour_item_office_hours);
+        if (currentTourItem.getmOfficeHours() != null) {
+            officeHours.setText(currentTourItem.getmOfficeHours());
+        } else {
+            officeHours.setVisibility(View.GONE);
         }
 
         // Set the theme color for the list item
-        View songContainer = listItemView.findViewById(R.id.song_container);
+        View tourItemContainer = listItemView.findViewById(R.id.tour_item_container);
+
         // Find the color that the resource ID maps to
         int color = ContextCompat.getColor(getContext(), mColorResourceId);
         // Set the background color of the text container View
-        songContainer.setBackgroundColor(color);
+        tourItemContainer.setBackgroundColor(color);
 
         // Return the whole list item layout (containing 2 TextViews) so that it can be shown in
         // the ListView.

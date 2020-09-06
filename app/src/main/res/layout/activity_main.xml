@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:backgroundTint="@color/primary_color"
-    tools:context="com.example.android.musical_structure_app.MainActivity">
+    tools:context="com.example.android.tour_guide_app.MainActivity">
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabs"

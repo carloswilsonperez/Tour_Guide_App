@@ -1,4 +1,4 @@
-package com.example.android.musical_structure_app;
+package com.example.android.tour_guide_app;
 
 import android.os.Bundle;
 
@@ -14,10 +14,10 @@ import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link SportsFragment#newInstance} factory method to
+ * Use the {@link FoodFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class SportsFragment extends Fragment {
+public class FoodFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -28,7 +28,7 @@ public class SportsFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public SportsFragment() {
+    public FoodFragment() {
         // Required empty public constructor
     }
 
@@ -38,11 +38,11 @@ public class SportsFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment SportsFragment.
+     * @return A new instance of fragment FoodFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static SportsFragment newInstance(String param1, String param2) {
-        SportsFragment fragment = new SportsFragment();
+    public static FoodFragment newInstance(String param1, String param2) {
+        FoodFragment fragment = new FoodFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -62,7 +62,6 @@ public class SportsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.tours_list, container, false);
 
@@ -71,26 +70,30 @@ public class SportsFragment extends Fragment {
 
         String title;
         String description;
-        String eventDate;
+        String eventDate = null;
+        String address = null;
+        String phone = null;
+        String officeHours = null;
 
-        title = "Charreada";
-        description = "The sport of charreada is considered a \"living history\" of Mexico and is the national sport. This competitive sport is similar to rodeo and its origins date back to the 19th Century when Mexico's haciendas were widespread throughout the country.";
-        eventDate = "All Year";
-        tourItems.add(new TourItem(title, description, R.drawable.charreria));
+        title = "Pozole";
+        description = "Made with pork and hominy (dried corn), pozole is a traditional Mexican soup that is available at food stands, markets, and restaurants throughout Guadalajara. This dish is served at celebratory events such as Mexico's Independence Day, Quinceañeras, weddings, birthdays, and baptisms.";
+        tourItems.add(new TourItem(title, description, eventDate, address, phone, officeHours, R.drawable.pozole));
 
-        title = "Soccer";
-        description = "Club Deportivo, commonly known as Chivas, is a professional soccer club based in Guadalajara. The team was founded by Edgar Everaert, who arrived in Mexico in 1906. In 1908, with the approval of Everaert and the players, the team was renamed as Club Deportivo Guadalajara to reflect a sense of loyalty within Guadalajara's locals. In that same year, the team declared it would only field Mexican-born players.";
-        eventDate = "All Year";
-        tourItems.add(new TourItem(title, description, R.drawable.soccer));
+        title = "Enchiladas Tapatias";
+        description = "The Spanish adjective tapatío means coming from the city or region of Guadalajara, and these simple enchiladas originate from Guadalajara.";
+        tourItems.add(new TourItem(title, description, eventDate, address, phone, officeHours, R.drawable.enchiladas_tapatias));
 
-        title = "Wrestling";
-        description = "Lucha Libre is a form of professional wrestling developed in Mexico. This lively sport has become an internationally recognized symbol of Mexican pop culture. The history of Mexican wrestlinig dates back to 1863 when Enrique Ugartechea, the first Mexican wrestler, developed the Mexican lucha libre style inspired by Greco-Roman wrestling. Today, lucha libre wrestlers are known as luchadores.";
-        eventDate = "All Year";
-        tourItems.add(new TourItem(title, description, R.drawable.wrestling));
+        title = "Chilaquiles";
+        description = "Chilaquiles are a breakfast staple in Guadalajara. This hearty dish is typically served three different ways, either verde (green salsa), rojo (red salsa) or divorciados (a combination of red and green salsa).";
+        tourItems.add(new TourItem(title, description, eventDate, address, phone, officeHours, R.drawable.chilaquiles));
+
+        title = "Guacamole";
+        description = "A popular dip in America, Guacamole was first created by the Aztecs in what is now Mexico.";
+        tourItems.add(new TourItem(title, description, eventDate, address, phone, officeHours, R.drawable.guacamlole));
 
         // Create an {@link TourItemAdapter}, whose data source is a list of {@link TourItem}s. The
         // adapter knows how to create list items for each item in the list.
-        TourItemAdapter adapter = new TourItemAdapter(getActivity(), tourItems, R.color.category_instrumental);
+        TourItemAdapter adapter = new TourItemAdapter(getActivity(), tourItems, R.color.category_rock);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
@@ -106,7 +109,6 @@ public class SportsFragment extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 // Get the {@link TourItem} object at the given position the user clicked on
                 TourItem tourItemSelected = tourItems.get(position);
-
             }
         });
 

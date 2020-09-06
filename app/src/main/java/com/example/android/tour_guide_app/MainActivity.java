@@ -1,5 +1,5 @@
 
-package com.example.android.musical_structure_app;
+package com.example.android.tour_guide_app;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
