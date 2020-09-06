@@ -77,44 +77,43 @@ public class PlacesFragment extends Fragment {
 
         title = "Catedral de Guadalajara";
         description = "Guadalajara's cathedral is the city's most beloved and conspicuous landmark with distinctive neo-Gothic towers built after an earthquake toppled the originals in the mid-19th century. Begun in 1588 and consecrated in 1618, the building is almost as old as the city itself. Time your visit right and you will see light filter through the stained-glass renderings of The Last Supper and hear a working pipe organ rumble sweetly from the rafters.";
-        eventDate = "All Year";
-        address = "Alcalde Ave. #10 (between Hildalgo Ave. and Morelos) Guadalajara, 44100";
-        phone = "+(33) 3613 7168";
-        officeHours = "08:00AM - 08:00PM";
+        eventDate = "All Year.";
+        address = "Alcalde Ave. #10 (between Hildalgo Ave. and Morelos) Guadalajara, 44100.";
+        phone = "+(33) 3613 7168.";
+        officeHours = "08:00AM - 08:00PM.";
         tourItems.add(new TourItem(title, description, eventDate, address, phone, officeHours, R.drawable.catedral_guadalajara));
 
         title = "Hospicio Cabañas";
         description = "The Hospicos Cabañas was built at the beginning of the 19th centurey to provide care and shelter for the disadvantaged – orphans, seniors, the handicapped and chronic invalids. This large complex which incorporates several unusual features designed specifically to meet the needs of its occupants, was unique for its time.";
-        eventDate = "All Year";
-        address = "Cabanas No. 8 Col. Las Fresas, Plaza tapatia C.P. 44369";
-        phone = "(33) 3818 2800 ext. 31642";
-        officeHours = "10:00AM - 06:00PM";
+        eventDate = "All Year.";
+        address = "Cabanas No. 8 Col. Las Fresas, Plaza tapatia C.P. 44369.";
+        phone = "(33) 3818 2800 ext. 31642.";
+        officeHours = "10:00AM - 06:00PM.";
         tourItems.add(new TourItem(title, description, eventDate, address, phone, officeHours, R.drawable.hospicio_cabanas));
 
         title = "Basilica de Zapopan";
         description = "Zapopan's pride and joy, the Basilica de Zapopan, built in 1730, is home to Nuestra Senora de Zapopan, a petite statue of the Virgin visited by pilgrims year-round. During the Fiestas de Octubre, thousands of kneeling faithful from the Jalisco region crawl behind the statue as it is carried from the basilica to Guadalajara's central cathedral.";
-        eventDate = "All Year";
-        address = "Evan Briseno #152, Guadalajara";
-        phone = "+52 (33) 3633 6614";
-        officeHours = "09:00AM - 08:00PM";
+        eventDate = "All Year.";
+        address = "Evan Briseno #152, Guadalajara.";
+        phone = "+52 (33) 3633 6614.";
+        officeHours = "09:00AM - 08:00PM.";
         tourItems.add(new TourItem(title, description, eventDate, address, phone, officeHours, R.drawable.catedral_zapopan));
 
         title = "Andares";
         description = "Andaras is a shopping mall located in the Zapopan district of Guadalajara. This outdoor and indoor shopping center opened on November 19, 2008 and has been drawing local and visiting shoppers ever since. All the well recognized international luxury and commercial brands as well as independent retailers are housed there. ";
-        eventDate = "All Year";
-        address = "Blvd. Puerto de Hierro #4965, Guadalajara, 45116";
-        phone = "+(33) 3648 2280";
-        officeHours = "11:00AM - 10:00PM";
+        eventDate = "All Year.";
+        address = "Blvd. Puerto de Hierro #4965, Guadalajara, 45116.";
+        phone = "+(33) 3648 2280.";
+        officeHours = "11:00AM - 10:00PM.";
         tourItems.add(new TourItem(title, description, eventDate, address, phone, officeHours, R.drawable.andares));
 
         title = "Museo de las Artes";
         description = "To scratch your modernist itch if you've overdosed on classic art, head three blocks west of Parque Revolucion to this museum housed in a French renaissance building that formaearly served as the admin buildings for the University of Guadalajara.";
-        eventDate = "All Year";
-        address = "Av Jauarez #975, Guadalajara";
-        phone = "+(33) 3134 1664";
-        officeHours = "Tuesday to Sunday from 10:00AM - 6:00PM";
+        eventDate = "All Year.";
+        address = "Av Jauarez #975, Guadalajara.";
+        phone = "+(33) 3134 1664.";
+        officeHours = "Tuesday to Sunday from 10:00AM - 6:00PM.";
         tourItems.add(new TourItem(title, description, eventDate, address, phone, officeHours, R.drawable.museo_artes));
-
 
         // Create an {@link TourItemAdapter}, whose data source is a list of {@link TourItem}s. The
         // adapter knows how to create list items for each item in the list.

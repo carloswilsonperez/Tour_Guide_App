@@ -76,37 +76,37 @@ public class FestivitiesFragment extends Fragment {
 
         title = "COME Festival";
         description = "COME Festival Internacional comes to Guadalajara every year to give a touch of unique flavor to local cuisine and introduce new dishes that will conquer even the most expert palate. With cooking demos, round tables, Guadalajara sets the table and flavors to enjoy a gastronomic feast.";
-        eventDate = "March";
+        eventDate = "March.";
         tourItems.add(new TourItem(title, description, eventDate, address, phone, officeHours, R.drawable.come));
 
         title = "Guadalajara International Film Festival";
         description = "With a diverse program, the International Film Festival in Guadalajara highlights the imagination of great artists and filmmakers. The FICG is a cultural event of great importance for Guadalajara and showcases the appreciation, dissemination, promotion and distribution of Mexican and Latin American cinema. It is a festival fit for in which film is presented as an industry, entertainment and art.";
-        eventDate = "March";
+        eventDate = "March.";
         tourItems.add(new TourItem(title, description, eventDate, address, phone, officeHours, R.drawable.festival_cine));
 
         title = "Tequila Festival";
         description = "More than 200 brands of tequila, music, art exhibits, food and tequila tastings await you during this two -day festival. Tequila Festival will delight your senses with the Mexican elixir that has transcended borders and makes Guadalajara proud of our history and tradition.";
-        eventDate = "March";
+        eventDate = "March.";
         tourItems.add(new TourItem(title, description, eventDate, address, phone, officeHours, R.drawable.festival_tequila));
 
         title = "Jalisco Jazz Festival";
         description = "The Jalisco Jazz Festival is a summer festival in Guadalajara that attracts the most influential artists of the international jazz scene. For several years now, the Jalisco Jazz Festival hosts hundreds of attendees with brilliant artistic shows that highlights the best music of the jazz scene.";
-        eventDate = "July";
+        eventDate = "July.";
         tourItems.add(new TourItem(title, description, eventDate, address, phone, officeHours, R.drawable.festival_jazz));
 
         title = "International Mariachi and Charrería Festival";
         description = "Named an \"Intangible Heritage of Humanity\" by UNESCO, the International Mariachi and Charrería Festival has become an experience full of tradition. Every year, since 1994, thousands of spectators attend the festival to enjoy performances by some of the best mariachis in the world, the National Charro Championship, and other culture related events.This festival has turned into a spectacular party filled with Mexican folklore.";
-        eventDate = "September";
+        eventDate = "September.";
         tourItems.add(new TourItem(title, description, eventDate, address, phone, officeHours, R.drawable.festival_mariachi));
 
         title = "Fiestas de Octubre";
         description = "With a broad range of great artists, the Fiestas de Octubre brings together nearly two million visitors per year. This month-long Guadalajara celebration started in 1965 and features Guadalajara’s best art, culture, entertainment, and cuisine.";
-        eventDate = "October";
+        eventDate = "October.";
         tourItems.add(new TourItem(title, description, eventDate, address, phone, officeHours, R.drawable.fiestas_octubre));
 
         title = "Guadalajara International Book Fair";
         description = "Since 1987, the Guadalajara International Book Fair has been responsible for turning our city into a intellectual epicenter. The festival’s program involves international authors from all continents and different languages. Open to the general public, the festival includes live music, art, film, theater and literature.";
-        eventDate = "November";
+        eventDate = "November.";
         tourItems.add(new TourItem(title, description, eventDate, address, phone, officeHours, R.drawable.feria_libro));
 
         // Create an {@link TourItemAdapter}, whose data source is a list of {@link TourItem}s. The

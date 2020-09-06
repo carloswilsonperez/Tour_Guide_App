@@ -77,7 +77,7 @@ public class TourItemAdapter extends ArrayAdapter<TourItem>  {
 
         TextView address = listItemView.findViewById(R.id.tour_item_address);
         if (currentTourItem.getmAddress() != null) {
-            address.setText("ADDRESS; " + currentTourItem.getmAddress());
+            address.setText("ADDRESS: " + currentTourItem.getmAddress());
         } else {
             address.setVisibility(View.GONE);
         }

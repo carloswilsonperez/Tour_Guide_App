@@ -78,17 +78,17 @@ public class SportsFragment extends Fragment {
 
         title = "Charreada";
         description = "The sport of charreada is considered a \"living history\" of Mexico and is the national sport. This competitive sport is similar to rodeo and its origins date back to the 19th Century when Mexico's haciendas were widespread throughout the country.";
-        eventDate = "All Year";
+        eventDate = "All Year.";
         tourItems.add(new TourItem(title, description, eventDate, address, phone, officeHours, R.drawable.charreria));
 
         title = "Soccer";
         description = "Club Deportivo, commonly known as Chivas, is a professional soccer club based in Guadalajara. The team was founded by Edgar Everaert, who arrived in Mexico in 1906. In 1908, with the approval of Everaert and the players, the team was renamed as Club Deportivo Guadalajara to reflect a sense of loyalty within Guadalajara's locals. In that same year, the team declared it would only field Mexican-born players.";
-        eventDate = "All Year";
+        eventDate = "All Year.";
         tourItems.add(new TourItem(title, description, eventDate, address, phone, officeHours, R.drawable.soccer));
 
         title = "Wrestling";
         description = "Lucha Libre is a form of professional wrestling developed in Mexico. This lively sport has become an internationally recognized symbol of Mexican pop culture. The history of Mexican wrestlinig dates back to 1863 when Enrique Ugartechea, the first Mexican wrestler, developed the Mexican lucha libre style inspired by Greco-Roman wrestling. Today, lucha libre wrestlers are known as luchadores.";
-        eventDate = "All Year";
+        eventDate = "All Year.";
         tourItems.add(new TourItem(title, description, eventDate, address, phone, officeHours, R.drawable.wrestling));
 
         // Create an {@link TourItemAdapter}, whose data source is a list of {@link TourItem}s. The
