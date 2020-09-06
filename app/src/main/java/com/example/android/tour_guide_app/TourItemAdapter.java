@@ -71,7 +71,7 @@ public class TourItemAdapter extends ArrayAdapter<TourItem>  {
 
         TextView when = listItemView.findViewById(R.id.tour_when);
         if (!TextUtils.isEmpty(currentTourItem.getmEventDate())) {
-            when.setText("WHEN: " + currentTourItem.getmEventDate());
+            when.setText(getContext().getString(R.string.when_prefix) + currentTourItem.getmEventDate());
         } else {
             when.setVisibility(View.GONE);
         }

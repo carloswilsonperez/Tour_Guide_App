@@ -14,6 +14,12 @@
     <!-- Category name for the pop genre [CHAR LIMIT=20] -->
     <string name="category_pop">Places</string>
 
+    <!-- Prefixes to use in TourItemAdapter [CHAR LIMIT=20] -->
+    <string name="when_prefix">WHEN:\u0020</string>
+    <string name="address_prefix">ADDRESS:\u0020</string>
+    <string name="phone_prefix">PHONE:\u0020</string>
+
+    <!-- Strings for the Places fragment -->
     <string-array name="places_titles">
         <item>Catedral de Guadalajara</item>
         <item>Hospicio Cabañas</item>
@@ -64,7 +70,7 @@
         <item>@drawable/museo_artes</item>
     </integer-array>
 
-
+    <!-- Strings for the Cuisine fragment -->
     <string-array name="cuisine_titles">
         <item>Pozole</item>
         <item>Enchiladas Tapatìas</item>
@@ -108,8 +114,7 @@
         <item>@drawable/guacamlole</item>
     </integer-array>
 
-
-
+    <!-- Strings for the Sports fragment -->
     <string-array name="sports_titles">
         <item>Charreada</item>
         <item>Soccer</item>
@@ -146,8 +151,7 @@
         <item>@drawable/wrestling</item>
     </integer-array>
 
-
-
+    <!-- Strings for the Festivities fragment -->
     <string-array name="festivities_titles">
         <item>COME Festival</item>
         <item>Guadalajara International Film Festival</item>
